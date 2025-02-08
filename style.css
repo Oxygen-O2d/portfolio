@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(20,20,83,1) 35%, rgba(0,212,255,1) 100%);
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+#container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    text-align: center;
+    
+}
+
+#photo{
+    margin: 0;
+    border: solid;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+#links_container{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    height:4vh;
+    width: 100%;
+    position: fixed;
+    margin-top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+#About{
+    margin: 0;
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Achievements{
+    margin: 0;
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    height: 100vh;
+}
+
+.nav{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav:hover{
+    text-decoration: underline;
+}
+
+#contact{
+    margin: 0;
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    height: 100vh;
+}
+
+#intro{
+   border: none;
+   margin-top: 30vh;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#btn1{
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    transition: background 1s;
+}
+#btn1:hover{
+    background: rgba(255, 255, 255, 0.2);
+    color:white;
+}
+
+img{
+    border: solid white;
+    border-width: 3px;
+    border-radius: 50%;
+}
+
+#para{
+    width: 60%;
+    
+}
+
+h2{
+    margin-top: 30px;
+}
+
+#abt{
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    width: 60%;
+    padding: 12px;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 415px){
+    #links_container{
+        gap: 3px;
+        padding: 5px;
+    }
+}
+
+
